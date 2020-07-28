@@ -2,21 +2,9 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "ModuleNotFoundError",
-     "evalue": "No module named 'flask_pymongo'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-1-a51437e71967>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[0mflask\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mFlask\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mrender_template\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[1;32mfrom\u001b[0m \u001b[0mflask_pymongo\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mPyMongo\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mscraping\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'flask_pymongo'"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "from flask import Flask, render_template\n",
     "from flask_pymongo import PyMongo\n",
@@ -25,7 +13,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -34,21 +22,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "NameError",
-     "evalue": "name 'PyMongo' is not defined",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-3-8d92e18fbc0d>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# Use flask_pymongo to set up mongo connection\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[0mapp\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mconfig\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"MONGO_URI\"\u001b[0m\u001b[1;33m]\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;34m\"mongodb://localhost:27017/mars_app\"\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[0mmongo\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mPyMongo\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mapp\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[1;31mNameError\u001b[0m: name 'PyMongo' is not defined"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# Use flask_pymongo to set up mongo connection\n",
     "app.config[\"MONGO_URI\"] = \"mongodb://localhost:27017/mars_app\"\n",
@@ -57,7 +33,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -69,7 +45,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -83,18 +59,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "SyntaxError",
-     "evalue": "invalid syntax (<ipython-input-6-866eed795106>, line 1)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-6-866eed795106>\"\u001b[1;36m, line \u001b[1;32m1\u001b[0m\n\u001b[1;33m    .update(query_parameter, data, options)\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     ".update(query_parameter, data, options)"
    ]
@@ -103,29 +70,204 @@
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      " * Serving Flask app \"__main__\" (lazy loading)\n",
-      " * Environment: production\n",
-      "   WARNING: This is a development server. Do not use it in a production deployment.\n",
-      "   Use a production WSGI server instead.\n",
-      " * Debug mode: off\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      " * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "if __name__ == \"__main__\":\n",
     "   app.run()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Visit the mars nasa news site\n",
+    "url = 'https://mars.nasa.gov/news/'\n",
+    "browser.visit(url)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Optional delay for loading the page\n",
+    "browser.is_element_present_by_css(\"ul.item_list li.slide\", wait_time=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Convert the browser html to a soup object and then quit the browser\n",
+    "html = browser.html\n",
+    "news_soup = soup(html, 'html.parser')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "slide_elem = news_soup.select_one('ul.item_list li.slide')\n",
+    "slide_elem.find(\"div\", class_='content_title')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Use the parent element to find the first 'a' tag and save it as 'news_title'\n",
+    "news_title = slide_elem.find(\"div\", class_='content_title').get_text()\n",
+    "news_title"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Use the parent element to find the paragraph text\n",
+    "news_p = slide_elem.find('div', class_=\"article_teaser_body\").get_text()\n",
+    "news_p"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def mars_news(browser):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Scrape Mars News\n",
+    "    # Visit the mars nasa news site\n",
+    "    url = 'https://mars.nasa.gov/news/'\n",
+    "    browser.visit(url)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Optional delay for loading the page\n",
+    "    browser.is_element_present_by_css(\"ul.item_list li.slide\", wait_time=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Convert the browser html to a soup object and then quit the browser\n",
+    "    html = browser.html\n",
+    "    news_soup = soup(html, 'html.parser')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Add try/except for error handling\n",
+    "    try:\n",
+    "        slide_elem = news_soup.select_one(\"ul.item_list li.slide\")\n",
+    "        # Use the parent element to find the first 'a' tag and save it as 'news_title'\n",
+    "        news_title = slide_elem.find(\"div\", class_=\"content_title\").get_text()\n",
+    "        # Use the parent element to find the paragraph text\n",
+    "        news_p = slide_elem.find(\"div\", class_=\"article_teaser_body\").get_text()\n",
+    "\n",
+    "    except AttributeError:\n",
+    "        return None, None\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "return news_title, news_p"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def featured_image(browser):\n",
+    "    # Visit URL\n",
+    "    url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'\n",
+    "    browser.visit(url)\n",
+    "\n",
+    "    # Find and click the full image button\n",
+    "    full_image_elem = browser.find_by_id('full_image')[0]\n",
+    "    full_image_elem.click()\n",
+    "\n",
+    "    # Find the more info button and click that\n",
+    "    browser.is_element_present_by_text('more info', wait_time=1)\n",
+    "    more_info_elem = browser.links.find_by_partial_text('more info')\n",
+    "    more_info_elem.click()\n",
+    "\n",
+    "    # Parse the resulting html with soup\n",
+    "    html = browser.html\n",
+    "    img_soup = soup(html, 'html.parser')\n",
+    "\n",
+    "    # Add try/except for error handling\n",
+    "    try:\n",
+    "        # Find the relative image url\n",
+    "        img_url_rel = img_soup.select_one('figure.lede a img').get(\"src\")\n",
+    "\n",
+    "    except AttributeError:\n",
+    "        return None\n",
+    "\n",
+    "    # Use the base url to create an absolute url\n",
+    "    img_url = f'https://www.jpl.nasa.gov{img_url_rel}'\n",
+    "\n",
+    "    return img_url"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def mars_facts():\n",
+    "    # Add try/except for error handling\n",
+    "    try:\n",
+    "        # Use 'read_html' to scrape the facts table into a dataframe\n",
+    "        df = pd.read_html('http://space-facts.com/mars/')[0]\n",
+    "\n",
+    "    except BaseException:\n",
+    "        return None\n",
+    "    \n",
+    "    # Assign columns and set index of dataframe\n",
+    "    df.columns=['Description', 'Mars']\n",
+    "    df.set_index('Description', inplace=True)\n",
+    "    \n",
+    "    # Convert dataframe into HTML format, add bootstrap\n",
+    "    return df.to_html()"
    ]
   },
   {
